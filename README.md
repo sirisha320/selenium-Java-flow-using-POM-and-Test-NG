@@ -104,4 +104,10 @@ Public class chcekoutpage {
     pageFactory.initElement(driver,this);
     }
     public void chcekoutpage{
-    firstName.sendkeys
+    firstName.sendkeys("Siri");
+    lastNmae.sendkeys("r");
+    postalcode.sendkeys("225566");
+    continue.click();
+    finishBtn.click();
+    }
+    }
