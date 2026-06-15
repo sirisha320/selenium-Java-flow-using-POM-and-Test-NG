@@ -55,5 +55,16 @@ Webelement radiobutton;
 @findBy(id ="addtocart");
 WebElement addtocart;
 public productpage (Webdriver driver){
-this.driver =
-pageFactory.initElement(
+this.driver = driver;
+pageFactory.initElement(driver,this);
+}
+public void sortdropdown {
+select sc = new select(sortdropdown);
+}
+sc.selectbyvisualtext("Price low to High");
+public void radiobutton{
+radiobutton.click();
+}
+public void addtocart{
+addtocart.clicka();
+}
