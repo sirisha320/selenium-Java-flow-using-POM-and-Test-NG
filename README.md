@@ -81,3 +81,27 @@ public void checkout{
 checkoutbtw.click();
 }
 }
+**6. Checkout**
+Public class chcekoutpage {
+ WebDriver driver;
+
+    @FindBy(id="first-name")
+    WebElement firstName;
+
+    @FindBy(id="last-name")
+    WebElement lastName;
+
+    @FindBy(id="postal-code")
+    WebElement postalCode;
+
+    @FindBy(id="continue")
+    WebElement continueBtn;
+
+    @FindBy(id="finish")
+    WebElement finishBtn;
+    public chcekoutpage(Webdriver driver){
+    this.driver = driver;
+    pageFactory.initElement(driver,this);
+    }
+    public void chcekoutpage{
+    firstName.sendkeys
