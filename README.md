@@ -111,3 +111,28 @@ Public class chcekoutpage {
     finishBtn.click();
     }
     }
+**7. Alert**
+driver.findelement(By.id("deletebtn")).click();
+Alert alert = driver.switchto().alert();
+Stringtext = alert.gettext();
+System.out.println("text");
+alert.accept();
+
+// ELSe
+
+alert.dismiss();
+
+**8. Windowhandle**
+String parent = driver.getwindowhandle();
+driver.findelement(By.linkedtest("openwindow")).click();
+set<string>allwindows = driver.getwindowhandle();
+?/ list<String>wsindows = new arraylist<> (driver.getwindowhandles());
+// System.out.println("window title ; +driver.gettitle());
+for(string window : window){
+if(!window.equals(parent)){
+driver.Switchto().window(window);
+System.out.println(driver. get Title());
+driver.close();
+}
+}
+driver.switchto().window(parent);
