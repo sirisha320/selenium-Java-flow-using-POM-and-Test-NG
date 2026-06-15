@@ -68,3 +68,16 @@ radiobutton.click();
 public void addtocart{
 addtocart.clicka();
 }
+**5. cart Page**
+public class cartpage{
+Webdriver driver;
+@findBy(id="checkout");
+WebElement Chacekout;
+public cartpage (WebDriver driver){
+this.driver = driver;
+pageFactory.initElement(driver ,this);
+}
+public void checkout{
+checkoutbtw.click();
+}
+}
