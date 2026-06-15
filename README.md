@@ -45,3 +45,15 @@ public void searchproduct(String product){
 serachproduct.sendkeys("Sims");
 }
 }
+**4. Product Page**
+Public Class productpage{
+WebDriver driver;
+@findBy(id="sortdropdown");
+WebElement sortdropdown;
+@findBy(id ="radiobutton");
+Webelement radiobutton;
+@findBy(id ="addtocart");
+WebElement addtocart;
+public productpage (Webdriver driver){
+this.driver =
+pageFactory.initElement(
